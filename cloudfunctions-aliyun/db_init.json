@@ -1,0 +1,154 @@
+// 在本文件中可配置云数据库初始化，数据格式见：https://uniapp.dcloud.io/uniCloud/cf-database?id=db_init
+
+// 编写完毕后对本文件点右键，可按配置规则创建表和添加数据
+
+{ //用户列表
+	"user": {
+		"data": [{
+			"create_time": "2020-11-12 12:21:30", // 注册时间
+			"update_time": "2020-11-12 12:21:30", // 更新时间
+			"delete_time": "2020-11-12 12:21:30", // 删除时间
+			"experience": "9999", // 经验
+			"integral": "100", // 积分
+			"openid": "154534312313", // openId
+			"password": "", // 密码
+			"phone": "18027175260", //电话号码
+			"username": "胖子", // 昵称
+			"authentication": "y",
+			"use_city": "广州",
+			"front_idcard": "https://image.39.net/preview/image/doctor_default.jpg",
+			"driving_licence": "https://image.39.net/preview/image/doctor_default.jpg",
+			"reverse_idcard": "https://image.39.net/preview/image/doctor_default.jpg",
+			"avatar": "https://image.39.net/preview/image/doctor_default.jpg" // 头像
+		}]
+	},
+	// 实名认证列表
+	"authentication": {
+		"data": [{
+			"state": "apply", // 审核中,pass 通过  nopass 没通过
+			"use_city": "广州",
+			"front_idcard": "https://image.39.net/preview/image/doctor_default.jpg",
+			"driving_licence": "https://image.39.net/preview/image/doctor_default.jpg",
+			"reverse_idcard": "https://image.39.net/preview/image/doctor_default.jpg",
+			"user_id": "321321321321321" // 头像
+		}]
+	},
+	// 等级
+	"grade": {
+		"data": [{
+			"title": "白银", // 审核中,pass 通过  nopass 没通过
+			"imgurl": "图片",
+			"need_experience": "15000",
+			"need_money": "9999",
+			"right": "{desc:描述}"
+		}]
+	},
+	// 积分变更明细
+	"integral": {
+		"data": [{
+			"create_time": "2020-11-12 12:21:30", // 注册时间
+			"update_time": "2020-11-12 12:21:30", // 更新时间
+			"delete_time": "2020-11-12 12:21:30", // 删除时间
+			"before": "100", // 经验
+			"add": "100",
+			"after": "200",
+			"type": "add",
+			"orderId": "1232132132132"
+		}]
+	},
+	// 后台
+	"admin": {
+		"data": [{
+			"password": "21232f297a57a5a743894a0e4a801fc3",
+			"roles_id": "af8f9dffa5d420fbc249141645b962ee",
+			"status": 1,
+			"username": "admin"
+		}]
+	},
+	// 角色
+	"roles": {
+		"data": [{
+			"_id": "5ec1f715f8eeb6004dc291f6",
+			"name": "超级权限",
+			"node": [
+				"index",
+				"user",
+				"roles"
+			],
+			"status": 1
+		}]
+	},
+	// 轮播图
+	"carousel": {
+		"data": [{
+			"title": "轮播图标题",
+			"img_url": "https://image.39.net/preview/image/doctor_default.jpg",
+			"type": "car_detail", // car_detail 车详情, content 内容  only_img 只显示图片 url 跳转h5
+			"content": "5"
+		}]
+	},
+	// 车辆信息
+	"car": {
+		"data": [{
+			"name": "车名",
+			"img_url": "https://image.39.net/preview/image/doctor_default.jpg", // 车子图片
+			"price_day": "12999",
+			"estimated_price": "12999",
+			"miles_per_hour": "25",
+			"tags": ["3天起租", "2017年上牌"],
+			"rent_type": "self_driving", //self-driving 自驾  // pick_up
+			"car_type": "跑车", //self-driving 自驾  // pick_up
+			"seat": "2座",
+			"is_convertible": "y",
+			"special_offer": "n",
+			"city": "北京",
+			"sort": "1",
+			"begin_time": "2020-11-12 12:21:30", //可租用时间
+			"end_time": "2020-11-12 12:21:30", //可租用时间,
+			"state": "y", //是否商家,
+			"create_time": "2020-11-12 12:21:30", // 注册时间
+			"update_time": "2020-11-12 12:21:30", // 更新时间
+			"delete_time": "2020-11-12 12:21:30" // 删除时间
+		}]
+	},
+	// 推荐列表
+	"recommend": {
+		"data": [{
+			"car_id": "213213",
+			"state": "y",
+			"sort": "1",
+			"type": "car", //推荐类型
+			"nav_url": "广告链接"
+		}]
+	},
+	// 公司信息
+	"companyinfo": {
+		"data": [{
+			"type": "integral", // '网站' '微信' wechat  contact:客服电话
+			"content": "测试"
+		}]
+	},
+	// 常见问题
+	"faq": {
+		"data": [{
+			"type": "contact", // '网站' '微信' wechat  contact:客服电话
+			"content": "18027175260"
+		}]
+	},
+	// 规则
+	"rules": {
+		"data": [{
+			"type": "contact", // '网站' '微信' wechat  contact:客服电话
+			"content": "18027175260"
+		}]
+	},
+	// 客服中心
+	"contact": {
+		"data": [{
+			"city": "北京",
+			"weixin": "中灵租车",
+			"weixin_code": "https://image.39.net/preview/image/doctor_default.jpg",
+			"address": "北京市东城区香河源路"
+		}]
+	}
+}

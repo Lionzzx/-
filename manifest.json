@@ -1,0 +1,28 @@
+{
+    "name" : "router-unicloud-iview-admin示例",
+    "appid" : "__UNI__A0A0821",
+    "description" : "一个更为简洁的后台管理系统，专为 uni-app 云开发（uniCloud） 量身打造",
+    "versionName" : "v1.6.2",
+    "versionCode" : 160,
+    "transformPx" : false,
+    "h5" : {
+        "title" : "unicloud-router-iview-admin",
+        "router" : {
+            "base" : "/unicloud-router-iview-admin/",
+            "mode" : "hash"
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "devServer" : {
+            "https" : false
+        },
+        "domain" : "mouxangitee.gitee.io",
+        "uniStatistics" : {
+            "enable" : true
+        },
+        "template" : ""
+    }
+}
